@@ -6,6 +6,13 @@
 Welcome to Pupper's documentation!
 ==================================
 
+## About Pupper
+
+Stanford Pupper is a 3lb quadruped robot that can trot, hop, and 
+run around. We hope that its low-cost and simple design will allow 
+robot enthusiasts in K-12 and beyond to get their hands dirty with 
+fun, dynamic robots. 
+
 Contents:
 
 .. toctree::
