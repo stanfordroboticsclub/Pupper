@@ -1,8 +1,3 @@
-.. Pupper documentation master file, created by
-   sphinx-quickstart on Thu Apr 30 00:30:42 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Welcome to Pupper's documentation!
 ==================================
 
@@ -38,9 +33,12 @@ Assembly
 
 Step-by-step instructions for the main parts of the build:
 
-1. Hip Assembly
-2. Body Assembly
-3. PCB Assembly
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   pupperassembly/assembly
+
 
 We’re working on instructions for the rest of the build but in the meantime, check out the Fusion 360 design below.
 
@@ -53,18 +51,21 @@ Power distribution pcb files: https://drive.google.com/file/d/1E9DzHPxw0DIfAtcd3
 Code
 *****
 
-Help
-*****
-
-Contents:
-
 .. toctree::
    :maxdepth: 2
    :glob:
 
    puppercode/code
+
+Help
+*****
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
    help
-   pupperassembly/assembly
+   
    
 
 
