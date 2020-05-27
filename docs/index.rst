@@ -24,7 +24,8 @@ high level behaviors like playing fetch or following you around. You can also si
 before touching the real robot.
 
 To get started, check out the pages linked below on part sourching and assembly. In total, the parts costs around $900, 
-but it could cost you a little more or a little less depending on if you have some parts already available, like a Raspberry Pi.
+but it could cost you a little more or a little less depending on if you have some parts already available, like a Raspberry Pi. 
+You can also purchase a pre-made kit for a markup from `Cypress Software <https://cypress-software-inc.myshopify.com/>`_.
 
 .. toctree::
     :maxdepth: 1
