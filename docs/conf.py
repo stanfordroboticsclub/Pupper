@@ -17,7 +17,7 @@ import sys
 
 # -- Project information -----------------------------------------------------
 
-project = 'Pupper'
+project = 'Stanford Pupper'
 copyright = '2020, Nathan Kau, Abi Lopez'
 author = 'Nathan Kau, Abi Lopez'
 
