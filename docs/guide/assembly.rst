@@ -200,7 +200,7 @@ Completed step
 Step 9. Install servo horn on outside servo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Video Instructions: TBA
+* Video Instructions: https://youtu.be/Tj7zx2M6xas
 *  Materials: Servo horn, Outer Hip assembly, M3x8 button head, M2x8 socket head
 *   Tools: 2mm hex driver
 
@@ -227,7 +227,7 @@ Completed step for left side
 Step 10. Assemble the two sides
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Video Instructions: TBA
+* Video Instructions: https://youtu.be/dKv7VrdE290
 *  Materials: Inner and Outer Hip assembly, M3x16 button head screws for screwing into standoffs, loctite
 *   Tools: 2mm hex driver
 
