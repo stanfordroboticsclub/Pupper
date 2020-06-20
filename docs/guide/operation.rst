@@ -39,3 +39,20 @@ Robot controls
 
     * Forward/back: moves the robot forward/backwards when in Trot mode
     * Left/right: moves the robot left/right when in Trot mode
+
+Notes
+-------
+
+* PS4 controller pairing instructions (repeat of instructions above)
+    
+    * To put it into pairing mode, hold the share button and circular Playstation button at the same time until it starts making quick double flashes. 
+    * If it starts making slow single flashes, hold the Playstation button down until it stops blinking and try again.
+
+* Battery voltage
+    
+    * If you power the robot with anything higher than 8.4V (aka >2S) you'll almost certainly fry all your expensive servos!
+    * Also note that you should attach a lipo battery alarm to your battery when running the robot so that you are know when the battery is depleted. Discharging your battery too much runs the risk of starting a fire, especially if you try to charge it again after it's been completely discharged. A good rule-of-thumb for know when a lipo is discharged is checking whether the individual cell voltages are below 3.6V.
+
+* Feet!
+
+    * Using the bare carbon fiber as feet works well for grippy surfaces, including carpet. If you want to use the robot on a more slippery surface, we recommend buying rubber grommets (McMaster #90131A101) and fastening them to the pre-drilled holes in the feet. 
