@@ -69,36 +69,42 @@ Sometimes it takes some time for your computer to read the SD card and show the 
 .. image:: ../_static/replaceboot.jpg
     :align: center
 
-7. Remove SD card from computer and put it into your Raspberry Pi. 
-####################################################################
+7. Turn on your Raspberry Pi. 
+###################################################################################################
+Remove SD card from computer and put it into your Raspberry Pi. Connect power to the Pi as well. 
 
-#. Configure your computer to access the robot network: 
+8. Configure your computer to SSH into the robot
+######################################################## 
 
-	* To use ethernet for set up (recommended), connect the ethernet cable to your computer and the raspberry pi. 
-	* Go to your network settings for the interface you wish to use (ethernet/wifi)
-	* Change your Configure IPv4: Manually
-	* Change your IP Address to something in range 10.0.0.X (If you are a part of Stanford Student Robotics pick something that doesn't colide with other systems from this `document <https://docs.google.com/spreadsheets/u/1/d/1pqduUwYa1_sWiObJDrvCCz4Al3pl588ytE4u-Dwa6Pw/edit?usp=sharing>`_ )
-	* Change your Subnet Mask: 255.255.255.0
-	* Leave the Router blank
-	* After disconnecting from the robot network remember to return those settings to what they orignially were, otherwise your internet on that interface won't work
+* To use ethernet for set up (recommended), connect the ethernet cable to your computer and the raspberry pi. 
+* Go to your network settings for the interface you wish to use (ethernet/wifi)
+* Change your Configure IPv4: Manually
+* Change your IP Address to something in range 10.0.0.X (If you are a part of Stanford Student Robotics pick something that doesn't colide with other systems from this `document <https://docs.google.com/spreadsheets/u/1/d/1pqduUwYa1_sWiObJDrvCCz4Al3pl588ytE4u-Dwa6Pw/edit?usp=sharing>`_ )
+* Change your Subnet Mask: 255.255.255.0
+* Leave the Router blank
+* After disconnecting from the robot network remember to return those settings to what they orignially were, otherwise your internet on that interface won't work
 
-#.  SSH into the pi from your computer. The default password is ``raspberry`` ::
+9. SSH into the pi from your computer.
+######################################
 
-	ssh pi@10.0.0.10
+Run ``ssh pi@10.0.0.10`` (The default password is ``raspberry``)
 
 
 .. image:: ../_static/sshimage.jpg
     :align: center
 
-3. Type rw to enter read-write mode. Confirm that the terminal prompt ends with (rw) instead of (ro)
+10. Enter read-write mode
+####################################################################################################
+Run ``rw`` in the robot shell.
+Confirm that the terminal prompt ends with (rw) instead of (ro).
 
 .. image:: ../_static/readwrite.JPG
     :align: center
 
-4. To install packages run::
+11. Install prerequisites
+##############################
 
-	sudo ./install_packages.sh 
-
+* Run ``sudo ./install_packages.sh``
 * If the IP is still 10.0.0.10 you will be prompted to change it. The raspberry Pi IP should not conflict with your computer's IP, 10.0.0.Y. 
 * If the hostname is still raspberry you will be prompted to change it.  
 * You will be asked to enter the current time and date. This is needed so that certificates don't get marked as expired. There is a ``time_sync.sh`` script that updates the current time from google
