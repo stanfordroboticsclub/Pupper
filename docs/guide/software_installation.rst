@@ -159,7 +159,7 @@ What the RPI-Setup repo does
 *      Gives the script to install tools and repos needed for development
 
 
-Installing the StanfordQuarduped software on the Raspberry Pi
+Installing the StanfordQuadruped software on the Raspberry Pi
 -------------------------------------------------------------
 
 Steps
