@@ -1,5 +1,5 @@
-Design
-=======
+Mechanical Design
+=================
 
 Fusion 360 CAD model: https://a360.co/2TEh4gQ
 

@@ -34,6 +34,9 @@ not affiliated with Cypress Software, we have worked with them to make sure the 
 
     guide/purchasing
     guide/assembly
+    guide/software_installation
+    guide/calibration
+    guide/operation
 
 
 .. toctree::
@@ -41,7 +44,7 @@ not affiliated with Cypress Software, we have worked with them to make sure the 
     :caption: References
 
     design
-    code/code
+    code/explanation
     help
 
 .. image:: _static/pupperpic.PNG

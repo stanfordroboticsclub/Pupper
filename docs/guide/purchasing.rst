@@ -20,9 +20,7 @@ into much more detail.
 
 Pre-Made Kits
 --------------
-If you’d like to skip the soldering steps and have all the components 
-directly shipped to you, you can buy a kit from Cypress Software 
-(not affiliated with Stanford Robotics). 
-Their kits cost about 15-20% more than if you bought everything yourself. 
-They also have an option to purchase a completely pre-assembled robot. 
-https://cypress-software-inc.myshopify.com/
+Two small businesses are now selling Pupper kits. Both sell complete Pupper kits as well as fully assembled robots. Cypress Software also sells partially complete kits. Check out both websites to see which kit best suits your needs.
+
+* `Cypress Software <https://cypress-software-inc.myshopify.com/>`_
+* `MangDang <http://www.mangdang.net/Product?_l=en>`_
