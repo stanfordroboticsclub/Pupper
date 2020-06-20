@@ -43,9 +43,9 @@ not affiliated with Cypress Software, we have worked with them to make sure the 
     :maxdepth: 1
     :caption: References
 
-    design
-    code/explanation
-    help
+    reference/design
+    reference/controller
+    reference/help
 
 .. image:: _static/pupperpic.PNG
     :align: center

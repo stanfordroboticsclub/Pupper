@@ -214,11 +214,72 @@ and check the wlan0 portion to check if you have an IP address and other debuggi
 	cd StanfordQuadruped
 	sudo bash install.sh
 
-5. Power-cycle the robort
+5. Power-cycle the robot
 #############################
 Unplug the battery, wait about 30 seconds, and then plug it back in.
 
-6. Done!
+6. Verify everything is working
+###############################
+
+#. SSH into the robot
+    
+    * Run ``ssh pi@10.0.0.xx (where xx is the IP address you chose for the robot)``
+
+#. Check the status for the joystick service 
+
+    * Run ``sudo systemctl status joystick``
+    * If you haven't yet connected the PS4 controller, it should say something like ::
+        
+        pi@pupper(rw):~/StanfordQuadruped$ sudo systemctl status joystick
+        ● joystick.service - Pupper Joystick service
+        Loaded: loaded (/home/pi/PupperCommand/joystick.service; enabled; vendor preset: enabled)
+        Active: active (running) since Sun 2020-03-01 06:57:20 GMT; 1s ago
+        Main PID: 5692 (python3)
+            Tasks: 3 (limit: 4035)
+        Memory: 7.1M
+        CGroup: /system.slice/joystick.service
+                ├─5692 /usr/bin/python3 /home/pi/PupperCommand/joystick.py
+                └─5708 hcitool scan --flush
+
+        Mar 01 06:57:20 pupper systemd[1]: Started Pupper Joystick service.
+        Mar 01 06:57:21 pupper python3[5692]: [info][controller 1] Created devices /dev/input/js0 (joystick) /dev/input/event0 (evdev)
+        Mar 01 06:57:21 pupper python3[5692]: [info][bluetooth] Scanning for devices
+
+#. Connect the PS4 controller to the Pi by putting it pairing mode.
+    
+    * To put it into pairing mode, hold the share button and circular Playstation button at the same time until it starts making quick double flashes. 
+    * If it starts making slow single flashes, hold the Playstation button down until it stops blinking and try again.
+
+#. Once the controller is connected, check the status again 
+
+    * Run ``sudo systemctl status joystick``
+    * It should now look something like::
+
+        pi@pupper(rw):~/StanfordQuadruped$ sudo systemctl status joystick
+        ● joystick.service - Pupper Joystick service
+        Loaded: loaded (/home/pi/PupperCommand/joystick.service; enabled; vendor preset: enabled)
+        Active: active (running) since Sun 2020-03-01 06:57:20 GMT; 55s ago
+        Main PID: 5692 (python3)
+            Tasks: 2 (limit: 4035)
+        Memory: 7.3M
+        CGroup: /system.slice/joystick.service
+                └─5692 /usr/bin/python3 /home/pi/PupperCommand/joystick.py
+
+        Mar 01 06:57:20 pupper systemd[1]: Started Pupper Joystick service.
+        Mar 01 06:57:21 pupper python3[5692]: [info][controller 1] Created devices /dev/input/js0 (joystick) /dev/input/event0 (evdev)
+        Mar 01 06:57:21 pupper python3[5692]: [info][bluetooth] Scanning for devices
+        Mar 01 06:58:12 pupper python3[5692]: [info][bluetooth] Found device A0:AB:51:33:B5:A0
+        Mar 01 06:58:13 pupper python3[5692]: [info][controller 1] Connected to Bluetooth Controller (A0:AB:51:33:B5:A0)
+        Mar 01 06:58:14 pupper python3[5692]: running
+        Mar 01 06:58:14 pupper python3[5692]: [info][controller 1] Battery: 50%
+
+#. Check the status of the robot service
+
+    * Run ``sudo systemctl status robot``
+    * The output varies depending on the order of you running various programs, but just check that it doesn't have any red text saying that it failed.
+    * If it did fail, usually this fixes it: ``sudo systemctl restart robot``
+
+7. Done!
 #########
 
 Continue to Calibration.
