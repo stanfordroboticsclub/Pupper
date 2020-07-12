@@ -25,8 +25,8 @@ before touching the real robot.
 
 To get started, check out the pages linked below on part sourcing and assembly. In total, the parts costs around $900, 
 but it could cost you a little more or a little less depending on if you have some parts already available, like a Raspberry Pi. 
-You can also purchase a pre-made kit for a markup from `Cypress Software <https://cypress-software-inc.myshopify.com/>`_. While we are
-not affiliated with Cypress Software, we have worked with them to make sure the kits are complete.
+You can also purchase complete kits from either `MangDang <http://www.mangdang.net/Product?_l=en>`_ or `Cypress Software <https://cypress-software-inc.myshopify.com/>`_. They sell different options so check out both to see what works for you.
+We're not affiliated with either company, but we've verified both of their kits.
 
 .. toctree::
     :maxdepth: 1
