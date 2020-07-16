@@ -29,16 +29,20 @@ Robot controls
     * Note: the PS4 controller's front light will change colors to indicate if the robot is deactivated or activated.
 
 * R1: Press to transition between Rest mode and Trot mode
-* "X" button: Press it three times to complete a full hop
-* Right joystick
-    
-    * Forward/back: pitches the robot forward and backward
-    * Left/right: turns the robot left and right
-
 * Left joystick
 
     * Forward/back: moves the robot forward/backwards when in Trot mode
     * Left/right: moves the robot left/right when in Trot mode
+* Right joystick
+    
+    * Forward/back: pitches the robot forward and backward
+    * Left/right: turns the robot left and right
+* D-Pad
+
+    * Forward/back: raises and lowers the body
+    * Left/rights: rolls the body left/right
+* "X" button: Press it three times to complete a full hop
+
 
 Notes
 -------
