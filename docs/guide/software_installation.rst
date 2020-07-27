@@ -110,7 +110,7 @@ Confirm that the terminal prompt ends with (rw) instead of (ro).
 * You will be asked to enter the current time and date. This is needed so that certificates don't get marked as expired. There is a ``time_sync.sh`` script that updates the current time from google
 
 
-Getting internet access at Stanford
+Getting internet access at Stanford (General instructions in next section)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 This script will make so the RPi automatically wants to connect the Stanford network. Initially it won't be able to do that as it is not yet authenticated to do it. To set that up:
 
