@@ -435,6 +435,10 @@ Another look at the assembly
 .. image:: ../_static/body3coman.jpg
     :align: center
 
+Hi Michael & Toast
+^^^^^^^^^^^^^^^^^^
+(Yes, the back legs are the same as the front. Sorry our documentation isn't the best.)
+
 Step 4. Attach the two leg/body assemblies to the bottom carbon fiber plate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
