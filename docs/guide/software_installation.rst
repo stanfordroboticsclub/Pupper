@@ -110,29 +110,15 @@ Confirm that the terminal prompt ends with (rw) instead of (ro).
 * You will be asked to enter the current time and date. This is needed so that certificates don't get marked as expired. There is a ``time_sync.sh`` script that updates the current time from google
 
 
-Getting internet access at Stanford (General instructions in next section)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-This script will make so the RPi automatically wants to connect the Stanford network. Initially it won't be able to do that as it is not yet authenticated to do it. To set that up:
-
-* Plug your Pi in to power (over the onboard micro USB port). Either plug a monitor and keyboard into the Pi or SSH into it using your laptop over Ethernet. Log in to the Pi. In the welcome message that comes after the login line, look for the Pi's MAC address, which will appear under the line that says "wireless Hardware MAC address". Note that address down.
-*  Use another computer to navigate to iprequest.stanford.edu.
-*   Log in using your Stanford credentials.
-*    Follow the on-screen instructions to add another device:
-
-     * **First page:** Device Type: Other, Operating System: Linux, Hardware Address: put Pi's MAC address
-     *  **Second page:** Make and model: Other PC, Hardware Addresses Wired: delete what's there, Hardware Addresses Wireless: put Pi's MAC address
-
-*     Confirm that the Pi is connected to the network:
-
-      * Wait for an email (to your Stanford email) that the device has been accepted
-      *  **sudo reboot** on the Pi
-      *   After it's done rebooting, type ping www.google.com and make sure you are receiving packets over the network
-
-
-Getting internet access elsewhere
+Getting internet access
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-There are two methods for getting internet access elsewhere: using the raspi-config tool on the Pi or changing the wpa_supplicant file in the SD card file system. Using the raspi-config tool is simpler and recommended for beginners, but the benefits of modifying the wpa_supplicant file is that you can set the proper internet settings before starting up the Pi, which may help in scenarios where you'd like to do as little setup on the Pi as possible.
+There are two methods for getting internet access: using the raspi-config tool on the Pi or 
+changing the wpa_supplicant file on the SD card before inserting it into the Pi. If you're on Stanford campus, please follow
+the instructions in the next section instead since there are special requirements.
+If you're not on Stanford campus, using the raspi-config tool is 
+simpler and recommended for beginners. However, modifying the wpa_supplicant file 
+has the benefit that you can set the proper internet settings without SSHing into the Pi.
 
 1. Raspi-config method
 
@@ -153,6 +139,24 @@ This is the menu that will appear. Go to Network Options, then Wi-Fi and enter y
 2. Wpa_supplicant method
 
 Edit **/etc/wpa_supplicant/wpa_supplicant.conf** as documented in `this link <https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md>`_ , see "Adding the network details to the Raspberry Pi". You can also see this `link <https://linux.die.net/man/5/wpa_supplicant.conf>`_. Thanks to pi-init2 magic that file can be edited before the pi is ever turned on from **/boot/appliance/etc/wpa_supplicant/wpa_supplicant.conf**
+
+Getting internet access at Stanford
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Plug your Pi in to power (over the onboard micro USB port). Either plug a monitor and keyboard into the Pi or SSH into it using your laptop over Ethernet. Log in to the Pi. In the welcome message that comes after the login line, look for the Pi's MAC address, which will appear under the line that says "wireless Hardware MAC address". Note that address down.
+*  Use another computer to navigate to iprequest.stanford.edu.
+*   Log in using your Stanford credentials.
+*    Follow the on-screen instructions to add another device:
+
+     * **First page:** Device Type: Other, Operating System: Linux, Hardware Address: put Pi's MAC address
+     *  **Second page:** Make and model: Other PC, Hardware Addresses Wired: delete what's there, Hardware Addresses Wireless: put Pi's MAC address
+
+*     Confirm that the Pi is connected to the network:
+
+      * Wait for an email (to your Stanford email) that the device has been accepted
+      *  **sudo reboot** on the Pi
+      *   After it's done rebooting, type ping www.google.com and make sure you are receiving packets over the network
+
 
 What the RPI-Setup repo does
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^

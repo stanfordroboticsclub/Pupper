@@ -23,9 +23,12 @@ While the robot can walk out-of-the-box, some of the features you could add incl
 high level behaviors like playing fetch or following you around. You can also simulate the robot's motion in PyBullet
 before touching the real robot.
 
-To get started, check out the pages linked below on part sourcing and assembly. In total, the parts costs around $900, 
-but it could cost you a little more or a little less depending on if you have some parts already available, like a Raspberry Pi. 
-You can also purchase complete kits from either `MangDang <http://www.mangdang.net/Product?_l=en>`_ or `Cypress Software <https://cypress-software-inc.myshopify.com/>`_. They sell different options so check out both to see what works for you.
+To get started, check out the pages linked below on part sourcing and assembly. If you purchase the parts yourself, it'll run you 
+about $900. However, if you purchase a kit from either `MangDang <http://www.mangdang.net/Product?_l=en>`_ or 
+`Cypress Software <https://cypress-software-inc.myshopify.com/>`_ it'll likely cost you less. The two vendors sell 
+different options so check both of them out to see what works for you. As of Aug 1st, the complete kit from MangDang 
+costs USD 600 (ships from China), and the complete kit from Cypress Software costs USD 1250 (ships from Seattle). 
+Both prices exclude tax and shipping.
 We're not affiliated with either company, but we've verified both of their kits.
 
 .. toctree::
