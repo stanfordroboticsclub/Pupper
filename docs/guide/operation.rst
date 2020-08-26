@@ -44,8 +44,8 @@ Robot controls
 * "X" button: Press it three times to complete a full hop
 
 
-Notes
--------
+Important Notes
+---------------
 
 * PS4 controller pairing instructions (repeat of instructions above)
     

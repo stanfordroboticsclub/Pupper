@@ -69,11 +69,14 @@ Sometimes it takes some time for your computer to read the SD card and show the 
 .. image:: ../_static/replaceboot.jpg
     :align: center
 
-7. Turn on your Raspberry Pi. 
+Enabling Basic Functionality
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. Turn on your Raspberry Pi. 
 ###################################################################################################
 Remove SD card from computer and put it into your Raspberry Pi. Connect power to the Pi as well. 
 
-8. Configure your computer to SSH into the robot
+2. Configure your computer to SSH into the robot
 ######################################################## 
 
 * To use ethernet for set up (recommended), connect the ethernet cable to your computer and the raspberry pi. 
@@ -84,7 +87,7 @@ Remove SD card from computer and put it into your Raspberry Pi. Connect power to
 * Leave the Router blank
 * After disconnecting from the robot network remember to return those settings to what they orignially were, otherwise your internet on that interface won't work
 
-9. SSH into the pi from your computer.
+2. SSH into the pi from your computer.
 ######################################
 
 Run ``ssh pi@10.0.0.10`` (The default password is ``raspberry``)
@@ -93,25 +96,16 @@ Run ``ssh pi@10.0.0.10`` (The default password is ``raspberry``)
 .. image:: ../_static/sshimage.jpg
     :align: center
 
-10. Enter read-write mode
+3. Enter read-write mode
 ####################################################################################################
 Run ``rw`` in the robot shell.
 Confirm that the terminal prompt ends with (rw) instead of (ro).
 
 .. image:: ../_static/readwrite.JPG
     :align: center
-
-11. Install prerequisites
-##############################
-
-* Run ``sudo ./install_packages.sh``
-* If the IP is still 10.0.0.10 you will be prompted to change it. The raspberry Pi IP should not conflict with your computer's IP, 10.0.0.Y. 
-* If the hostname is still raspberry you will be prompted to change it.  
-* You will be asked to enter the current time and date. This is needed so that certificates don't get marked as expired. There is a ``time_sync.sh`` script that updates the current time from google
-
-
-Getting internet access
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+4. Get internet access
+#########################
 
 There are two methods for getting internet access: using the raspi-config tool on the Pi or 
 changing the wpa_supplicant file on the SD card before inserting it into the Pi. If you're on Stanford campus, please follow
@@ -120,7 +114,7 @@ If you're not on Stanford campus, using the raspi-config tool is
 simpler and recommended for beginners. However, modifying the wpa_supplicant file 
 has the benefit that you can set the proper internet settings without SSHing into the Pi.
 
-1. Raspi-config method
+a. Raspi-config method
 
 Once SSH'd into the Pi, run:
 
@@ -136,14 +130,14 @@ This is the menu that will appear. Go to Network Options, then Wi-Fi and enter y
 .. image:: ../_static/raspconfig2.JPG
     :align: center
 
-2. Wpa_supplicant method
+b. Wpa_supplicant method
 
 Edit **/etc/wpa_supplicant/wpa_supplicant.conf** as documented in `this link <https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md>`_ , see "Adding the network details to the Raspberry Pi". You can also see this `link <https://linux.die.net/man/5/wpa_supplicant.conf>`_. Thanks to pi-init2 magic that file can be edited before the pi is ever turned on from **/boot/appliance/etc/wpa_supplicant/wpa_supplicant.conf**
 
-Getting internet access at Stanford
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+4. [For Stanford Student Students] Get internet access at Stanford
+###############################################################################
 
-* Plug your Pi in to power (over the onboard micro USB port). Either plug a monitor and keyboard into the Pi or SSH into it using your laptop over Ethernet. Log in to the Pi. In the welcome message that comes after the login line, look for the Pi's MAC address, which will appear under the line that says "wireless Hardware MAC address". Note that address down.
+* Plug your Pi in to power (over the onboard micro USB port). Log in to the Pi over SSH. In the welcome message that comes after the login line, look for the Pi's MAC address, which will appear under the line that says "wireless Hardware MAC address". Note that address down.
 *  Use another computer to navigate to iprequest.stanford.edu.
 *   Log in using your Stanford credentials.
 *    Follow the on-screen instructions to add another device:
@@ -157,9 +151,18 @@ Getting internet access at Stanford
       *  **sudo reboot** on the Pi
       *   After it's done rebooting, type ping www.google.com and make sure you are receiving packets over the network
 
+5. Install prerequisites
+##############################
+
+* Run ``sudo ./install_packages.sh``
+* If the IP is still 10.0.0.10 you will be prompted to change it. The raspberry Pi IP should not conflict with your computer's IP, 10.0.0.Y. 
+* If the hostname is still raspberry you will be prompted to change it.  
+* You will be asked to enter the current time and date. You can skip to the next step if you'd like to automatically set the time and date. 
+* Run ``sudo ./time_sync.sh`` to automatically set the time and date.
+
 
 What the RPI-Setup repo does
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#############################
 
 * Enables ssh. Because the password is kept unchanged (raspberry) ssh is only enabled on the ethernet interface. Comment out the ListenAddress lines from /boot/appliance/etc/ssh/sshd_config to enable it on all interfaces.
 *  Sets the Pi to connect to the robot network (10.0.0.X) over ethernet
@@ -188,14 +191,14 @@ Check that it has access to the internet. If you're having trouble SSH-ing into 
 	* Here, "Y" is the IP address you chose for the Pi when running the install_packages.sh script. When prompted for the password, enter the default password "raspberry" or the one you set in the install_packages.sh script.
 
 2. Test for the internet connection. 
-######################################
-
-It should only run 4 tests, if it continues, use Ctrl + C to stop it. Below is a piture of a successful run. 
+###################################### 
 
 :: 
 
 	ping www.google.com
 	
+This is what the output should look like:
+
 .. image:: ../_static/pingresults.JPG
     :align: center
 
@@ -231,6 +234,7 @@ Unplug the battery, wait about 30 seconds, and then plug it back in.
 6. Verify everything is working
 ###############################
 
+#. If you just powered on the Pi, wait about 30 seconds until the green light stops blinking.
 #. SSH into the robot
     
     * Run ``ssh pi@10.0.0.xx (where xx is the IP address you chose for the robot)``
