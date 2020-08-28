@@ -26,9 +26,10 @@ before touching the real robot.
 To get started, check out the pages linked below on part sourcing and assembly. If you purchase the parts yourself, it'll run you 
 about $900. However, if you purchase a kit from either `MangDang <http://www.mangdang.net/Product?_l=en>`_ or 
 `Cypress Software <https://cypress-software-inc.myshopify.com/>`_ it'll likely cost you less. The two vendors sell 
-different options so check both of them out to see what works for you. As of Aug 1st, the complete kit from MangDang 
-costs USD 600 (ships from China), and the complete kit from Cypress Software costs USD 1250 (ships from Seattle). 
-Both prices exclude tax and shipping.
+different options so check both of them out to see what works for you. As of Aug 25th, the complete kit from MangDang (China)
+costs about USD 700, and the complete kit from Cypress Software (Seattle) costs about USD 1250. While both prices 
+include tax and shipping to US addresses, there are slight functional differences between the complete kits so please look further for yourself.
+They also sell cheaper semi-complete kits that still help you avoid the hastle of ordering custom parts.
 We're not affiliated with either company, but we've verified both of their kits.
 
 .. toctree::
