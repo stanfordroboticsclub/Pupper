@@ -14,8 +14,8 @@ robot enthusiasts in K-12 and beyond to get their hands on fun, dynamic robots.
         <iframe width="560" height="315" src="https://www.youtube.com/embed/NIjodHA78UE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-As the user, you can control how the robot moves and where it goes with a gamepad controller. 
-An onboard Raspberry Pi receives your commands and orchestrates the movements of its servo motors, three per leg,
+
+The robot's brain is a Raspberry Pi 4 computer, which receives commands from a wireless PS4 controller and controls the servo motors, three per leg,
 to move the feet and body to the right places. 
 
 The robot is designed to be "hacked" -- we want you to be able to adjust and expand the robot's behaviors to your heart's content. 
@@ -24,13 +24,9 @@ high level behaviors like playing fetch or following you around. You can also si
 before touching the real robot.
 
 To get started, check out the pages linked below on part sourcing and assembly. If you purchase the parts yourself, it'll run you 
-about $900. However, if you purchase a kit from either `MangDang <http://www.mangdang.net/Product?_l=en>`_ or 
-`Cypress Software <https://cypress-software-inc.myshopify.com/>`_ it'll likely cost you less. The two vendors sell 
-different options so check both of them out to see what works for you. As of Aug 25th, the complete kit from MangDang (China)
-costs about USD 700, and the complete kit from Cypress Software (Seattle) costs about USD 1250. While both prices 
-include tax and shipping to US addresses, there are slight functional differences between the complete kits so please look further for yourself.
-They also sell cheaper semi-complete kits that still help you avoid the hastle of ordering custom parts.
-We're not affiliated with either company, but we've verified both of their kits.
+about $900-$1000. However, you can purchase a kit to build the robot from either `MangDang <http://www.mangdang.net/Product?_l=en>`_ or 
+`Cypress Software <https://cypress-software-inc.myshopify.com/>`_ for cheaper than what it would cost you to get the parts yourself. The two vendors sell 
+different options so check both of them out to see what works for you. While we're not affiliated with either company, we've verified both of their kits.
 
 .. toctree::
     :maxdepth: 1
