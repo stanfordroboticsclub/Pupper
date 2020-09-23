@@ -286,6 +286,7 @@ Unplug the battery, wait about 30 seconds, and then plug it back in.
         Mar 01 06:58:13 pupper python3[5692]: [info][controller 1] Connected to Bluetooth Controller (A0:AB:51:33:B5:A0)
         Mar 01 06:58:14 pupper python3[5692]: running
         Mar 01 06:58:14 pupper python3[5692]: [info][controller 1] Battery: 50%
+    * If the pi can't find the joystick after a minute or two, it's possible that the pi's bluetooth controller was never turned on. Run ``sudo hciconfig hci0 up`` to turn the radio on. Then restart the pi.
 
 #. Check the status of the robot service
 
