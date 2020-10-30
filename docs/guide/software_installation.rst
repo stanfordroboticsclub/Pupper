@@ -155,7 +155,7 @@ Edit **/etc/wpa_supplicant/wpa_supplicant.conf** as documented in `this link <ht
 ##############################
 
 * Run ``sudo ./install_packages.sh``
-* If the IP is still 10.0.0.10 you will be prompted to change it. The raspberry Pi IP should not conflict with your computer's IP, 10.0.0.Y. 
+* If the IP is still 10.0.0.10 you will be prompted to change it. The raspberry Pi IP should not be the same as your computer's IP, 10.0.0.Y. 
 * If the hostname is still raspberry you will be prompted to change it.  
 * You will be asked to enter the current time and date. You can skip to the next step if you'd like to automatically set the time and date. 
 * Run ``sudo ./time_sync.sh`` to automatically set the time and date.
@@ -188,7 +188,12 @@ Check that it has access to the internet. If you're having trouble SSH-ing into 
 
 	ssh pi@10.0.0.Y
 	
-	* Here, "Y" is the IP address you chose for the Pi when running the install_packages.sh script. When prompted for the password, enter the default password "raspberry" or the one you set in the install_packages.sh script.
+Here, "Y" is the IP address you chose for the Pi when running the install_packages.sh script. When prompted for the password, enter the default password "raspberry" or the one you set in the install_packages.sh script.
+
+If you forgot what the Pi's IP address is, turn off the Pi, take out the SD card and put it in your computer. 
+Then open the sd card folder and go to the folder: boot/appliance/etc/network/. 
+Open the file called "interfaces" in a text editor. 
+On line 19 it should show the IP address as "address 10.0.0.x".
 
 2. Test for the internet connection. 
 ###################################### 

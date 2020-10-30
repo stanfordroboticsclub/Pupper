@@ -26,6 +26,16 @@ Steps
         sudo pigpiod
         python3 calibrate_servos.py
 
+    * The images below illustate the horizontal and vertical positions mentioned in the calibration script.
+    * If your servos can't reach these positions, it's likely the servo discs and/or arms were assembled incorrectly.
+
+.. image:: ../_static/front_calibration.png
+    :align: center
+
+.. image:: ../_static/side_calibration.png
+    :align: center
+
+
 #. Re-enable the robot script::
     
     sudo systemctl start robot
