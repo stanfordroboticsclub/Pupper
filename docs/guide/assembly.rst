@@ -294,7 +294,7 @@ Step 13. Assemble the upper leg extension rod
 
 Instructions: 
 
-1. Screw the rod ends on equally until the distance between the furthest holes on the rod match the holes on the upper carbon leg linkage (servo horn center to last carbon drill point). See picture for clarification. 
+1. Screw the rod ends on equally until the distance between the center of the holes in the rod ends is 123.5mm. The goal here is to make the center-to-center hole distance in the extension rod match that of the upper leg link.
 
 Preparing for the assembly
 
@@ -338,7 +338,7 @@ Preparing for the assembly
 .. image:: ../_static/hip15pre.jpg
     :align: center
 
-Completed step
+Completed step. CORRECTION: The extension rod in this picture is actually too short. See the red and blue annotation for the correct assembly. The servo horn, extension rod, upper leg link, and upper part of the lower leg link should form a perfect parallelogram.
 
 .. image:: ../_static/hip15com.jpg
     :align: center
