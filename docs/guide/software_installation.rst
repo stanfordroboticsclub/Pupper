@@ -66,7 +66,7 @@ Sometimes it takes some time for your computer to read the SD card and show the 
 * Replace any files that conflict so the repository's version overwrites the original version. You can now delete the zip file and the now empty folder.  
 
 
-.. image:: ../_static/replaceboot.jpg
+.. image:: ../_static/replaceboot.JPG
     :align: center
 
 Enabling Basic Functionality
