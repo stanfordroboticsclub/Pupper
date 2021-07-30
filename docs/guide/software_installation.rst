@@ -76,6 +76,8 @@ Enabling Basic Functionality
 ###################################################################################################
 Remove SD card from computer and put it into your Raspberry Pi. Connect power to the Pi as well. 
 
+If your Pi does not boot, please try going back to step 3 "Use etcher to flash the card" and use this version of Rasbian instead: https://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2020-02-14/2020-02-13-raspbian-buster-lite.zip
+
 2. Configure your computer to SSH into the robot
 ######################################################## 
 
