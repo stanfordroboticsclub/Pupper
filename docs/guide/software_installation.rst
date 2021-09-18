@@ -52,7 +52,7 @@ Sometimes it takes some time for your computer to read the SD card and show the 
 .. image:: ../_static/sdboot.JPG
     :align: center
 
-5. Download the latest release of the `RPI-Setup repository <https://github.com/stanfordroboticsclub/RPI-Setup>`_. 
+5. Download the latest release of the `RPI-Setup repository <https://github.com/Nate711/RPI-Setup>`_. 
 #####################################################################################################################
 
 * Unzip and extract all the files. 
